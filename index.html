@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Recycling Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>♻️ AI
+    <span class="gradient">Recycling</span><br>
+    <span class="gradient">Assistant</span>
+    </h1>
+
+    <p class="subtitle">
+        Smart Waste Classification for a Sustainable Future 🌍
+    </p>
+
+    <div class="main-content">
+
+        <div class="upload-box">
+            <p>Select Waste Image</p>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <img id="preview">
+
+    </div>
+
+    <div class="loading" id="status">
+        Loading AI Model...
+    </div>
+
+    <button onclick="analyzeWaste()">
+        Analyze Item
+    </button>
+
+    <div class="result" id="resultBox">
+
+        <h3 id="category"></h3>
+
+        <p id="confidence"></p>
+
+        <br>
+
+        <p id="message"></p>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h4>♻️ Recycle</h4>
+            <p>Smart AI</p>
+        </div>
+
+        <div class="stat-card">
+            <h4>🌍 Impact</h4>
+            <p>Eco Friendly</p>
+        </div>
+
+        <div class="stat-card">
+            <h4>🤖 Model</h4>
+            <p>TensorFlow</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

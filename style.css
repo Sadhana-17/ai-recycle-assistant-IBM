@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#36757c,#222829);
+    padding:10px;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+.gradient{
+background:linear-gradient(90deg,#3b82f6,#06b6d4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    margin-bottom:20px;
+    color:#f1f1f1;
+}
+
+.main-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.upload-box{
+    width:320px;
+    border:2px dashed #8BC34A;
+    border-radius:15px;
+    padding:20px;
+}
+
+.upload-box p{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+#preview{
+    width:300px;
+    height:220px;
+    object-fit:contain;
+    border-radius:15px;
+    background:white;
+    display:none;
+}
+
+.loading{
+    margin-top:15px;
+    color:#FFF176;
+    font-weight:bold;
+}
+
+button{
+    margin-top:15px;
+    padding:12px 30px;
+    border:none;
+    border-radius:10px;
+    background:#66BB6A;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.result{
+    margin-top:20px;
+    display:none;
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    border-radius:15px;
+    text-align:left;
+}
+
+.result h3{
+    color:#C8E6C9;
+    margin-bottom:10px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    background:rgba(255,255,255,0.12);
+    padding:12px;
+    border-radius:12px;
+    min-width:120px;
+}
+
+.stat-card h4{
+    color:#A5D6A7;
+}
+
+.stat-card p{
+    margin-top:5px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    h1{
+        font-size:1.6rem;
+    }
+
+    #preview{
+        width:250px;
+        height:180px;
+    }
+}
